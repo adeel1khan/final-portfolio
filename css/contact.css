@@ -1,0 +1,119 @@
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+    min-height: 100vh;
+    padding: 220px 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= CONTACT CARD ================= */
+
+.contact-card {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 60px 40px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+
+    animation: fadeUp 1.2s ease forwards;
+    opacity: 0;
+}
+
+/* ================= TEXT ================= */
+
+.contact-card h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* ================= EMAIL BUTTON ================= */
+
+.contact-email {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Dark mode */
+body:not(.light-mode) .contact-email {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+}
+
+body:not(.light-mode) .contact-email:hover {
+    background: white;
+    color: black;
+}
+
+/* Light mode */
+body.light-mode .contact-card {
+    background: rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+body.light-mode .contact-card p {
+    color: #444;
+}
+
+body.light-mode .contact-email {
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.2);
+    color: #111;
+}
+
+body.light-mode .contact-email:hover {
+    background: #111;
+    color: white;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .contact-card {
+        padding: 40px 20px;
+    }
+
+    .contact-card h1 {
+        font-size: 38px;
+    }
+
+    .contact-card p {
+        font-size: 16px;
+    }
+
+}

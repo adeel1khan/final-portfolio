@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Adeel Khan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Great+Vibes&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Page Specific Styles -->
+    <link rel="stylesheet" href="css/project.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <div class="logo">
+        <span class="first-name">Adeel</span>
+        <span class="last-name">Khan</span>
+    </div>
+
+    <nav id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Right side controls -->
+    <div class="nav-controls">
+        <div class="theme-toggle">☀</div>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+<section class="projects-hero">
+    <h1>Selected Projects</h1>
+    <p>Showcasing UI Designs, Posters & Logos</p>
+</section>
+
+
+<!-- ================= FILTER BUTTONS ================= -->
+<section class="project-controls">
+    <button class="filter-btn active" data-filter="ui">UI Designs</button>
+    <button class="filter-btn" data-filter="posters">Posters</button>
+    <button class="filter-btn" data-filter="logos">Logos</button>
+</section>
+
+
+<!-- ================= PROJECT GRID ================= -->
+<section class="project-section">
+    <div class="project-grid">
+
+        <!-- UI DESIGNS -->
+        <img src="image/ui-airmax-dark.jpg" class="project-item ui" alt="UI Design 1">
+        <img src="image/ui-airmax-light.jpg" class="project-item ui" alt="UI Design 2">
+        <img src="image/ui-app-cleaner.jpg" class="project-item ui" alt="UI Design 3">
+        <img src="image/ui-jordan-blue.jpg" class="project-item ui" alt="UI Design 4">
+        <img src="image/ADIDAS WEB UI.png" class="project-item ui" alt="UI Design 5">
+
+        <!-- POSTERS -->
+        <img src="image/DARPAN-POSTER 2.png" class="project-item posters hide" alt="Poster 1">
+        <img src="image/DARPAN-POSTER.png" class="project-item posters hide" alt="Poster 2">
+        <img src="image/Indpendence Day.png" class="project-item posters hide" alt="Poster 3">
+        <img src="image/open mic.png" class="project-item posters hide" alt="Poster 4">
+
+        <!-- LOGOS -->
+        <div class="project-item logos hide logo-card">
+    <img src="image/pixel bytes logo (1).png" alt="">
+</div>
+        <img src="image/Pixel Bytes.png" class="project-item logos hide" alt="Logo 2">
+        <img src="image/WE LOGO.png" class="project-item logos hide" alt="Logo 3">
+
+    </div>
+</section>
+
+
+<!-- Scripts -->
+<script src="JS/main.js"></script>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" src="">
+</div>
+
+</body>
+</html>
